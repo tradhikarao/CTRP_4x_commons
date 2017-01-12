@@ -1,0 +1,6 @@
+Steps to perform release:
+
+1.  Make sure Jira is in order with all issues in the release you want to tag marked resolved and all other issues moved out of the release.
+2.  Verify that the app passes all tests by running (you may need to run site verify in a separate step): mvn clean install site
+3.  Use AHP (https://anthillpro3.nci.nih.gov/tasks/project/WorkflowTasks/viewDashboard?workflowId=4619) to perform a release.
+4.  Mark the version released in Jira.

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<grid name="training-1.3">
+		<authentication-service-list>
+			<authentication-service-information>
+				<service-name>Training</service-name>
+				<service-url>https://dorian.training.cagrid.org:8443/wsrf/services/cagrid/Dorian</service-url>
+				<dorian-information>
+					<service-url>https://dorian.training.cagrid.org:8443/wsrf/services/cagrid/Dorian</service-url>
+					<proxy-lifetime-hours>12</proxy-lifetime-hours>
+					<proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+					<proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+					<proxy-delegation-path-length>3</proxy-delegation-path-length>
+				</dorian-information>
+			</authentication-service-information>
+			<authentication-service-information>
+				<service-name>National Cancer Institute</service-name>
+				<service-url>https://cagrid-auth.nci.nih.gov:8443/wsrf/services/cagrid/AuthenticationService</service-url>
+				<dorian-information>
+					<service-url>https://dorian.training.cagrid.org:8443/wsrf/services/cagrid/Dorian</service-url>
+					<proxy-lifetime-hours>12</proxy-lifetime-hours>
+					<proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+					<proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+					<proxy-delegation-path-length>3</proxy-delegation-path-length>
+				</dorian-information>
+			</authentication-service-information>
+		</authentication-service-list>
+	</grid>
+	<grid name="nci_qa-1.3">
+		<authentication-service-list>
+			<authentication-service-information>
+				<service-name>QA</service-name>
+				<service-url>https://cagrid-auth-qa.nci.nih.gov:8443/wsrf/services/cagrid/AuthenticationService</service-url>
+				<dorian-information>
+					<service-url>https://cagrid-dorian-qa.nci.nih.gov:8443/wsrf/services/cagrid/Dorian</service-url>
+					<proxy-lifetime-hours>12</proxy-lifetime-hours>
+					<proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+					<proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+					<proxy-delegation-path-length>3</proxy-delegation-path-length>
+				</dorian-information>
+			</authentication-service-information>
+		</authentication-service-list>
+	</grid>
+    <grid name="nci_qa-2.x">
+        <authentication-service-list>
+            <authentication-service-information>
+                <service-name>QA</service-name>
+                <service-url>https://cagrid2-auth-qa.nci.nih.gov:1521/authentication</service-url>
+                <dorian-information>
+                    <service-url>https://cagrid2-dorian-qa.nci.nih.gov:1521/dorian</service-url>
+                    <proxy-lifetime-hours>12</proxy-lifetime-hours>
+                    <proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+                    <proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+                    <proxy-delegation-path-length>3</proxy-delegation-path-length>
+                </dorian-information>
+            </authentication-service-information>
+        </authentication-service-list>
+    </grid>	
+	<grid name="nci_stage-1.3">
+		<authentication-service-list>
+			<authentication-service-information>
+				<service-name>National Cancer Institute</service-name>
+				<service-url>https://cagrid-auth-stage.nci.nih.gov:8443/wsrf/services/cagrid/AuthenticationService</service-url>
+				<dorian-information>
+					<service-url>https://cagrid-dorian-stage.nci.nih.gov:8443/wsrf/services/cagrid/Dorian</service-url>
+					<proxy-lifetime-hours>12</proxy-lifetime-hours>
+					<proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+					<proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+					<proxy-delegation-path-length>3</proxy-delegation-path-length>
+				</dorian-information>
+			</authentication-service-information>
+		</authentication-service-list>
+	</grid>
+    <grid name="nci_stage-2.x">
+        <authentication-service-list>
+            <authentication-service-information>
+                <service-name>National Cancer Institute</service-name>
+                <service-url>https://cagrid2-auth-stage.nci.nih.gov:1521/authentication</service-url>
+                <dorian-information>
+                    <service-url>https://cagrid2-dorian-stage.nci.nih.gov:1521/dorian</service-url>
+                    <proxy-lifetime-hours>12</proxy-lifetime-hours>
+                    <proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+                    <proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+                    <proxy-delegation-path-length>3</proxy-delegation-path-length>
+                </dorian-information>
+            </authentication-service-information>
+        </authentication-service-list>
+    </grid>	
+	<grid name="nci_prod-1.3">
+		<authentication-service-list>
+			<authentication-service-information>
+				<service-name>National Cancer Institute</service-name>
+				<service-url>https://cagrid-auth.nci.nih.gov:8443/wsrf/services/cagrid/AuthenticationService</service-url>
+				<dorian-information>
+					<service-url>https://cagrid-dorian.nci.nih.gov:8443/wsrf/services/cagrid/Dorian</service-url>
+					<proxy-lifetime-hours>12</proxy-lifetime-hours>
+					<proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+					<proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+					<proxy-delegation-path-length>3</proxy-delegation-path-length>
+				</dorian-information>
+			</authentication-service-information>
+		</authentication-service-list>
+	</grid>
+	<grid name="nci_prod-2.x">
+        <authentication-service-list>
+            <authentication-service-information>
+                <service-name>National Cancer Institute</service-name>
+                <service-url>https://cagrid2-auth.nci.nih.gov:1521/authentication</service-url>
+                <dorian-information>
+                    <service-url>https://cagrid2-dorian.nci.nih.gov:1521/dorian</service-url>
+                    <proxy-lifetime-hours>12</proxy-lifetime-hours>
+                    <proxy-lifetime-minutes>0</proxy-lifetime-minutes>
+                    <proxy-lifetime-seconds>0</proxy-lifetime-seconds>
+                    <proxy-delegation-path-length>3</proxy-delegation-path-length>
+                </dorian-information>
+            </authentication-service-information>
+        </authentication-service-list>
+    </grid>
+</config>

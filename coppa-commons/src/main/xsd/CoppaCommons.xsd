@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ISO="uri:iso.org:21090"
+	xmlns:COPPA-COMMON="http://common.coppa.nci.nih.gov"
+	targetNamespace="http://common.coppa.nci.nih.gov"
+	elementFormDefault="qualified"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb" jxb:version="1.0">
+	<xs:element name="LimitOffset">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="COPPA-COMMON:LimitOffsetType" />
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="LimitOffsetType">
+		<xs:annotation>
+			<xs:appinfo>
+				<jxb:class name="LimitOffsetType">
+					<jxb:javadoc>The LimitOffset type.</jxb:javadoc>
+				</jxb:class>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="limit" type="xs:int" />
+			<xs:element name="offset" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

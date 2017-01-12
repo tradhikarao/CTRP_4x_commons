@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:wsrbf="http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-01.xsd"
+	targetNamespace="http://faults.common.coppa.nci.nih.gov"
+	elementFormDefault="qualified"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb" jxb:version="1.0">
+	<xs:import 
+		namespace="http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-01.xsd"
+		schemaLocation="../wsrf/faults/WS-BaseFaults.xsd" />
+	<xs:complexType name="TooManyResultsFault">
+	  <xs:complexContent>
+			<xs:extension base="wsrbf:BaseFaultType">
+				<xs:sequence>
+					<xs:element name="maxResults" type="xs:int" />
+				</xs:sequence>
+			</xs:extension>
+	  </xs:complexContent>
+	</xs:complexType>			
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profilesXml xmlns="http://maven.apache.org/PROFILES/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/PROFILES/1.0.0 http://maven.apache.org/xsd/profiles-1.0.0.xsd">
+<profiles>
+    <profile>
+        <id>quick</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+        </activation>
+        <properties>
+            <cobertura.check.haltOnFailure>false</cobertura.check.haltOnFailure>
+            <maven.test.skip>true</maven.test.skip>
+            <pmd.skip>true</pmd.skip>
+            <checkstyle.skip>true</checkstyle.skip>
+        </properties>
+    </profile>
+</profiles>
+</profilesXml>
